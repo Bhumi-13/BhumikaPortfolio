@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhumika</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=PT+Serif:wght@400;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(68, 68, 133);
+            color: rgb(239, 231, 231);
+            font-family: 'PT Serif', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(44, 32, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 25px;
+        }
+
+        nav ul li a {
+            text-decoration: rgb(235, 230, 223);
+            color: rgb(236, 228, 228);
+        }
+
+        nav ul li a:hover {
+            color: rgb(81, 81, 109);
+            font-size: 1.8;
+        }
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 70px 0;
+            align-items: center;
+        }
+
+        .firstSection div {
+            width: 60%;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+            margin: 70px;
+        }
+
+        .leftSection .button {
+            padding: 70px 0;
+            left: -20px;
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            background-color: rgb(50, 59, 113);
+            color: white;
+            border: 2px solid white;
+            border-radius: 5px;
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        .leftSection .btn1 {
+            padding: 12px;
+            background-color: rgb(50, 59, 113);
+            color: white;
+            border: 2px solid white;
+            border-radius: 5px;
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+
+        .rightSection img {
+            width: 100%;
+            margin: -50px;
+
+        }
+
+        .purple {
+            color: rgb(177, 117, 233);
+        }
+
+        .text-gray {
+            color: rgb(182, 172, 172);
+            font-size: 1.6rem;
+        }
+
+        #element {
+            color: rgb(171, 109, 229);
+        }
+
+        .about-me {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .about-me h2 {
+            font-size: 24px;
+            color: #e8dfdf;
+        }
+
+        .about-me img {
+            width: 150px;
+            height: 270px;
+            border: rgb(10, 10, 10);
+            border-radius: 30%;
+            margin: 40px 0;
+        }
+
+        .about-me p {
+            font-size: 16px;
+            color: #d9d0d0;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 90vh;
+        }
+
+        .secondSection h1 {
+            font-size: 2.5rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 80vw;
+            height: 1px;
+            margin: 120px 0;
+            display: flex
+        }
+
+        .secondSection .vertical {
+            height: 50px;
+            width: 1px;
+            background: white;
+            margin: 0 120px;
+        }
+
+        .secondSection .box1 {
+            background: white;
+            width: 80vw;
+            height: 1px;
+            margin: 250px 0;
+            display: flex
+        }
+
+        .secondSection .vertical1 {
+            height: 50px;
+            width: 1px;
+            background: white;
+            margin: 0 150px;
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(142, 142, 146);
+            height: 1.3px;
+            margin: 40px 84px;
+        }
+
+        .image-top {
+            width: 32px;
+            position: relative;
+            top: -45px;
+            left: -17px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .vertical-text {
+            position: relative;
+            font-size: 1.2rem;
+            top: 30px;
+            width: 180px;
+            left: -81px;
+            text-align: center;
+            background-color: #422d81;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .projects-section {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .projects-section h2 {
+            font-size: 24px;
+            color: #c1b6b6;
+            margin: 30px;
+        }
+
+        .project-card {
+            background-color: #422d81;
+            padding: 30px;
+            margin-bottom: 40px;
+        }
+
+
+        .project-card h3 {
+            font-size: 18px;
+            color: #eadfdf;
+            margin-bottom: 10px;
+        }
+        .project-card h1 {
+            font-size: 13px;
+            color: #eadfdf;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            font-size: 14px;
+            color: #aa9c9c;
+            margin-bottom: 20px;
+        }
+
+        .project-card .project-link {
+            display: inline-block;
+            background-color: #333;
+            color: #fff;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .project-card .project-link:hover {
+            background-color: #666;
+        }
+
+
+        footer {
+            background-color: rgb(42, 6, 75);
+            height: 240px;
+        }
+
+        .footer {
+            display: flex;
+            padding: 30px 132px;
+        }
+
+        footer .footer-text-rights {
+            text-align: center;
+            color: rgb(108, 108, 108);
+            padding: 12px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Bhumika's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="Contact.html">Contact Me</a></li>
+                    
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hello!
+                <br>My name is <span class="purple"> Bhumika Trivedi</span>
+                <br>
+                <div>I am a </div>
+                <span id="element"></span>
+                <div class="button">
+                    <a href="https://drive.google.com/file/d/1l7IsixIhQZ5eCJqW5NXOVSmDBhDuL_wA/view?usp=sharing" target="_blank" download>
+                        <button class="btn">Download Resume</button>
+                      </a>
+                    <button class="btn1" onclick="window.location.href = 'https://github.com/Bhumi-13';">Visit Github</button>
+
+
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="bg-png.webp" alt="">
+            </div>
+        </section>
+        <h1 id="About"></h1>
+        <section class ="About">
+            <hr>
+            <div class="about-me">
+                <h2>About Me</h2>
+                <img src="bhumi_photo.jpg" alt="Profile Picture">
+                <p>I am an EC student studing in Shri Ramdeobaba College of Engineering and Mangaement
+                    in Nagpur.
+                    <br>Firstly, I learn how to solve practical life problems using Software Technologies through codes.
+                    I thrive on challenges
+                    and constantly set goals for myself, so I have something to strive toward. I'm always looking for an
+                    opportunity to do
+                    better.
+                </p>
+            </div>
+
+        </section>
+        <section class="secondSection">
+            <hr>
+            <h1>Skills</h1>
+            <span class="text-gray">I have gain so far</span>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="cpp.png" alt="">
+                    <div class="vertical-text">
+                        C & CPP
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="java.png" alt="">
+                    <div class="vertical-text">
+                        Java
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="web.png" alt="">
+                    <div class="vertical-text">
+                        Web Development
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="dbms.png" alt="">
+                    <div class="vertical-text">
+                        Database Management System
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="Mysql.png" alt="">
+                    <div class="vertical-text">
+                        MySQL
+                    </div>
+                </div>
+            </div>
+            <div class="box1">
+                <div class="vertical1">
+                    <img class="image-top" src="Power-BI.png" alt="">
+                    <div class="vertical-text">
+                        PowerBI
+                    </div>
+                </div>
+                <div class="vertical1">
+                    <img class="image-top" src="dsa.png" alt="">
+                    <div class="vertical-text">
+                        Data Structures & Algorithms
+                    </div>
+                </div>
+                <div class="vertical1">
+                    <img class="image-top" src="Blockchain.png" alt="">
+                    <div class="vertical-text">
+                        Basics Of Blockchain
+                    </div>
+                </div>
+                <div class="vertical1">
+                    <img class="image-top" src="aws.png" alt="">
+                    <div class="vertical-text">
+                        Basics Of AWS
+                    </div>
+
+        </section>
+        <h1 id="Projects"></h1>
+        <section class="Projects">
+            <hr>
+            <div class="projects-section">
+                <h2>Projects</h2>
+
+                <div class="project-card">
+                    <h3>Diagnois of Skin Cancer using Skin Lession Images
+                        and Deep Learning.</h3>
+                    <p>A flask web app which predict the percentage and type of Skin
+                        Cancer.
+                        <br>The Cancer model is trained using convolutional neural network .
+                        <br>Tried to achieve highest accuracy (97.3% current).
+                    </p>
+                    <h1><b>Technology Used -</b> Python, OpenCV, TensorFlow,
+                        Keras, MobileNet-v2 (CNN)</h1>
+                    
+                </div>
+
+                <div class="project-card">
+                    <h3>Created an Ecommerce Sales Dashboard</h3>
+                    <p>I utilize the MySQL database to create reports using a variety of
+                        Power BI features, <br>including Bar Charts, Pie Charts, and Doughnut
+                        Charts, <br>to present data in a visually engaging and informative
+                        manner.</p>
+                    <h1><b>Technology Used-</b>MySQL, Power BI
+                    </h1>
+                    
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer_first">
+                <h3>Bhumika's Portfolio</h3>
+            </div>
+            <div class="footer-Second">
+                
+            </div>
+            <div class="footer-Third"></div>
+            <div class="footer-Fourth"></div>
+        </div>
+        <div class="footer-text-rights">
+            <ul class="social-icons">
+                <li><a href="https://twitter.com/bhumii_13?t=Cc6ywVnEdBMUVh9gVXgSPQ&s=09"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://instagram.com/bhumitrivedi._?igshid=NGExMmI2YTkyZg=="><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/bhumika-trivedi-b19b35245/"><i class="fab fa-linkedin-in"></i></a></li>
+              </ul>
+            Copyrights &#169 www.bhumikasportfolio.com | All rights reserved.
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Coder','Web Developer', 'Java Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
